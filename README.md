@@ -10,6 +10,10 @@ database: sqlite3
 
 relational database with 5 tables: Category, Product, Image, Variance, and SKU 
 
+## how to set admin password
+
+yarn strapi admin:reset-user-password --email=<your email here> --password=<your password here>
+
 ## how to test 
 
 start server: yarn start 
