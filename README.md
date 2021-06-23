@@ -45,7 +45,7 @@ module.exports = ({ env }) => ({
 
         providerOptions: {
 
-          apiKey: 'send-grid_api_key',
+          apiKey: apiKey: env('SENDGRID_API_KEY'),
         },
 
       settings: {
