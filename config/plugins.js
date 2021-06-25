@@ -1,5 +1,5 @@
 module.exports = ({ env }) => {
-  console.log ("key = ", env('SENDGRID_API_KEY'))
+  //console.log ("key = ", env('SENDGRID_API_KEY'))
   return ({
       email: {
         provider: 'sendgrid',
