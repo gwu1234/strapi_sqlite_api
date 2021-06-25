@@ -180,6 +180,30 @@ query {
 
 }
 
+### mutation: create a new product 
+
+mutation {
+
+  createProduct(input:{data: {
+
+        name: "fishing vest"
+
+        description: "good fabric, super cool design"
+
+        category: "1"
+
+  }}) {
+
+      product {
+
+         id
+
+    }
+
+  }
+  
+}
+
 
 
 
