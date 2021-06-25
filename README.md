@@ -67,21 +67,121 @@ module.exports = ({ env }) => ({
 
 start server: yarn start 
 
-api:
+start graphql playground: localhost:1337/graphql
 
-http://localhost:1337/skus
+### query all sku
 
-http://localhost:1337/skus/1
+query {
 
-http://localhost:1337/products
+  skus {
 
-http://localhost:1337/products/1
+    id
 
-http://localhost:1337/variances
+    name
 
-http://localhost:1337/variances/1
+    product {
 
-http://localhost:1337/email
+      id
+
+      name
+      
+    }
+  }
+
+}
+
+
+
+### query all product
+
+query {
+
+  products {
+
+    id
+
+    name
+
+    category {
+
+      id
+
+      name
+
+    }
+
+  }
+
+}
+
+### query a category by its id
+
+query {
+
+  category (id: 1) {
+
+    id
+
+    name
+
+    products {
+
+       id
+
+       name
+
+    }
+
+  }
+
+}
+
+### query a product by its id
+
+query {
+
+  product(id: 2) {
+
+    id
+
+    name
+
+    category {
+
+       id
+
+       name
+
+    }
+
+  }
+
+}
+
+### query a sku by its id
+
+query {
+
+  sku(id: 1) {
+
+    id
+
+    name
+
+    product {
+
+       id
+
+       name
+
+    }
+
+  }
+
+}
+
+
+
 
 
 
