@@ -62,7 +62,6 @@ module.exports = ({ env }) => ({
 
   });
 
-
 ## deployment
 
 this app is deployed at Heroku cloud: https://strapi-graphql-api.herokuapp.com
@@ -82,6 +81,21 @@ tool: postman
 method: POST
 
 body; graphQl
+
+### testing email on Heroku server 
+
+url: https://strapi-graphql-api.herokuapp.com/email
+
+path: email/:to/:subject/:text, method: GET
+
+to send email to guoping.wu@gmail.com, subject is 'Hello Guoping", text is 'hody, guoping'
+
+at Postman 
+
+send a GET to 
+
+https://strapi-graphql-api.herokuapp.com/email/guoping.wu@gmail.com/Hello Guoping/hody, guoping
+
 
 
 ### query all sku
