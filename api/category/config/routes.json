@@ -2,14 +2,6 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/email",
-      "handler": "Email.index",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
       "path": "/categories",
       "handler": "category.find",
       "config": {
@@ -36,6 +28,14 @@
       "method": "POST",
       "path": "/categories",
       "handler": "category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/email/:to/:subject/:text",
+      "handler": "Email.index",
       "config": {
         "policies": []
       }
