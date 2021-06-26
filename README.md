@@ -63,11 +63,26 @@ module.exports = ({ env }) => ({
   });
 
 
-## how to test 
+## deployment
+
+this app is deployed at Heroku cloud: https://strapi-graphql-api.herokuapp.com
+
+## test at localhost 
 
 start server: yarn start 
 
 start graphql playground: localhost:1337/graphql
+
+## test with Heroku server 
+
+url: https://strapi-graphql-api.herokuapp.com
+
+tool: postman
+
+method: POST
+
+body; graphQl
+
 
 ### query all sku
 
