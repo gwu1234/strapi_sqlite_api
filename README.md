@@ -75,7 +75,7 @@ start graphql playground: localhost:1337/graphql
 
 ## test with Heroku server 
 
-url: https://strapi-graphql-api.herokuapp.com
+url: https://strapi-graphql-api.herokuapp.com/graphql
 
 tool: postman
 
