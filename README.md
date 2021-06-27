@@ -84,19 +84,23 @@ body; graphQl
 
 ### testing email on Heroku server 
 
-url: https://strapi-graphql-api.herokuapp.com/email
+url: https://strapi-graphql-api.herokuapp.com/strapi_email
 
-path: email/:to/:subject/:text, method: GET
+at Postman, send a POST 
 
-to send email to guoping.wu@gmail.com, subject is 'Hello Guoping", text is 'hody, guoping'
+with a json body 
 
-at Postman 
+{
 
-send a GET to 
+    "to": "your email, for example, guoping.wu@gmail.com", 
 
-https://strapi-graphql-api.herokuapp.com/email/guoping.wu@gmail.com/Hello Guoping/hody, guoping
+    "from": "info@shop1234.net, cannot change",
 
+    "subject":"strapi_email_routing, your subject",
 
+    "text":"strapi email is send via sendgrid, your message"
+
+}
 
 ### query all sku
 
